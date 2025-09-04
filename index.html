@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
     <title>Add text here</title>
 </head>
 
@@ -56,38 +59,11 @@
         </div>
     </footer>
 
-</body>
-
-</html>
-
-From your bash terminal, now type:
-npm start
-Using the scripts that you defined in package.json, npm will start lite-server, which will open the index.html page in your default browser.
-Try changing some of the text that says Add text here to see how your changes in your IDE are rendered on the browser.
-
-Part 2: Add Bootstrap code
-Now you will add the necessary code to index.html to be able to use Bootstrap in it.
-First, update the head element with this code:
-. . .
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <title>Add text here</title>
-</head>
-. . .
-Then, after the closing footer tag but before the closing body tag, add this code to bring in the JavaScript files used by Bootstrap:
-. . .
-    </footer>
-
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
 </body>
-. . .
+
+</html>
